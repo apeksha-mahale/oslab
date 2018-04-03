@@ -1,0 +1,106 @@
+Outputs: 
+(NOTE: '>' represents new line in the terminal. Not part of anything.)
+
+1) 1.sh
+Output 1:
+> sh 1.sh
+> Can't have zero arguments!
+Output 2:
+> sh 1.sh A B C
+> C B A
+
+2) 2.sh
+Output 1:
+> sh 2.sh
+> Incorrect number of arguments!
+Output 2:
+> sh 2.sh temp1.txt
+> Incorrect number of arguments!
+Output 3:
+> sh 2.sh temp1.txt temp2.txt temp3.txt
+> Incorrect number of arguments!
+Output 4:
+> sh 2.sh temp1.txt temp2.txt
+> File permissions are equal!
+> rw-rw-r--
+Output 5: 
+> chmod u+rwx temp1.txt
+> sh 2.sh temp1.txt temp2.txt
+> File permissions are not equal!
+> Permissions of temp1.txt: rwxrw-r--
+> Permissions of temp2.txt: rw-rw-r--
+
+3) 3.sh
+Output 1:
+> sh 3.sh
+> Enter the directory name: 
+> test  
+> Invalid directory!
+Output 2:
+> sh 3.sh
+> Enter the directory name: 
+> /home/keshavkd/Documents/OS
+> Size of /home/keshavkd/Documents/OS/4.sh is: 329
+> Size of /home/keshavkd/Documents/OS/2.sh is: 433
+> Size of /home/keshavkd/Documents/OS/Outputs.txt is: 1462
+> Size of /home/keshavkd/Documents/OS/1.sh is: 223
+> Size of /home/keshavkd/Documents/OS/3.sh is: 498
+> Size of /home/keshavkd/Documents/OS/5.sh is: 620
+> Size of /home/keshavkd/Documents/OS/temp1.txt is: 0
+> Size of /home/keshavkd/Documents/OS/6b.sh is: 32
+> Size of /home/keshavkd/Documents/OS/6a.sh is: 146
+> Size of /home/keshavkd/Documents/OS/temp3.txt is: 0
+> Size of /home/keshavkd/Documents/OS/temp2.txt is: 0
+> The largest file is: /home/keshavkd/Documents/OS/Outputs.txt
+> And its size is: 1462
+
+4) 4.sh
+Output 1:
+> sh 4.sh
+> Can't have zero arguments!
+Output 2:
+> sh 4.sh test
+> test is not a valid login id!
+Output 3:
+> sh 4.sh keshavkd
+> Login login: keshavkd
+> Home Directory: /home/keshavkd
+
+5) 5.sh
+Output 1: (Same password is used and matched.)
+> sh 5.sh
+> Enter the password: 
+> Confirm the password: 
+> The terminal is locked!
+> Enter the password: 
+> The terminal is unlocked!
+Output 2: (Incorrect password is used and matched after three tries.)
+> sh 5.sh
+> Enter the password: 
+> Confirm the password: 
+> The terminal is locked!
+> Enter the password: 
+> Incorrect password! Try again.
+> Enter the password: 
+> Incorrect password! Try again.
+> Enter the password: 
+> The terminal is unlocked!
+Output 3: (Incorrect password is used during confirmation.)
+> sh 5.sh
+> Enter the password: 
+> Confirm the password: 
+> Passwords do not match!
+
+6 a) 6a.sh
+Output:
+> sh 6a.sh
+> Enter three numbers: 
+> 10 7 6
+> The largest of 10, 7 and 6 is : 10
+
+6 b) 6b.sh
+Output:
+> sh 6b.sh
+> testing
+> gnitset
+
